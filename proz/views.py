@@ -1,7 +1,12 @@
 from django.shortcuts import render, redirect
 import openai
 import proz.zunmovie.movie as zm
-openai.api_key="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"
+import environ
+
+env = environ.Env()
+env.read_env('.env')
+
+openai.api_key= env('OPENAI_API_KEY')
 
 
 def zunda_create(text):
