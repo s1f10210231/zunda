@@ -1,0 +1,72 @@
+
+
+.image {
+    height: auto;
+    float: left;
+margin-left: 72px;
+}
+
+
+.button {
+transform: translate(-9%, -130%); /* ボタンを中央に配置 */
+background-color: #007bff; /* ボタンの背景色 */
+color: #fff; /* テキストの色 */
+padding: 15px 163px 15px 163px; /* パディングを調整 */
+border: none;
+border-radius: 150px; /* ボタンを角丸にする */
+cursor: pointer;
+margin-left: 850px;
+font-size: 50px;
+float: right;
+
+}
+
+.title{
+    margin-top: 30px;
+    position: relative;
+}
+
+/* 吹き出し本体 */
+.balloon {
+    margin-left: 280px;
+    float: left;
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border-color: black ;
+    border-radius: 30px;
+    font-size: 22px;
+    font-family: "UD デジタル 教科書体 NK-B","UD Digi Kyokasho NK-B";
+
+}
+
+/* 大きい丸 */
+.balloon::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background-color: #ade0ff;
+    right: -35px; /* 修正: left を right に変更 */
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+/* 小さい丸 */
+.balloon::after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background-color: #ade0ff;
+    right: -55px; /* 修正: left を right に変更 */
+    bottom: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.hole {
+    display: block;
+}
+
