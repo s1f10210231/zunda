@@ -24,4 +24,4 @@ numpy==1.21.2
 playsound==1.3.0
 moviepy==1.0.3
 pathlib==1.0.1
-voicevox_core-0.14.1+cpu-cp38-abi3-win_amd64.whl
+voicevox_core-0.14.3+cpu-cp38-abi3-linux_x86_64.whl
