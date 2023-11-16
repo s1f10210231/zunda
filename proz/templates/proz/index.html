@@ -14,7 +14,11 @@
           <img class="image top" src="media/pages/zuntext2.png" alt="ずんだクリエイト">
           <img class="image" src="media/pages/zuntext_c.png" alt="ずんだクリエイト">
 
-          <button class="button">始める</button>
+          <a href="#create">
+          <button class="button">
+                始める
+          </button>
+          </a>
         </div>
         <div class="balloon">
           可愛いのはボクの方なのだ。偽物がでしゃばるななのだ。
@@ -24,15 +28,16 @@
         <img src="media/pages/ずんだもん立ち絵素材V3_0000.png" alt="ずんだもん立ち絵素材V3_0000" width="30%" height="30%">
       </div> 
 
-      <h1 class="movie">動画を作成</h1>
+      <h1 class="movie" id="create">動画を作成</h1>
       <form method="post" class="generate">
         {% csrf_token %}
         <p>何を解説してもらいたいかテーマを入れてください</p>
-        <input type="text" id="zunda_input" name="zunda_input" placeholder="ずんだもんについて" required>
+        <input type="text" id="zunda_input" name="zunda_input" placeholder="ずんだもん" required>
+        <input type="submit" value="動画を作成">
       </form>  
 
-      <video width="320" height="240" controls>
-        <source src="media/movie/complete.mp4" type="video/mp4">
+      <video class="video"  width="1000" height="500" controls>
+        <source src="media/movie/complete.mp4"  type="video/mp4">
         Your browser does not support the video tag.
       </video>
       

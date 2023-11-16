@@ -364,3 +364,4 @@ def zunda_movie(text_zun):
     #         os.remove(path)
 
     print("不要なファイルおよびフォルダは削除されました。")
+    count=0

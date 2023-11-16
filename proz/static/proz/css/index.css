@@ -70,3 +70,20 @@ float: right;
     display: block;
 }
 
+.generate{
+    text-align: center;
+    font-family: "UD デジタル 教科書体 NK-B","UD Digi Kyokasho NK-B";
+
+}
+.movie{
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 163px 15px 163px; /* パディングを調整 */
+    font-family: "UD デジタル 教科書体 NK-B","UD Digi Kyokasho NK-B";
+    border-radius: 150px; /* ボタンを角丸にする */
+
+}
+.video{
+    margin-left: 12.5%;
+}
