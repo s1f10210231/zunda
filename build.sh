@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # exit on error
 set -o errexit
+/opt/render/project/src/.venv/bin/python -m pip install --upgrade pip
+
 pip3 install -r requestment.txt
 
 wget https://github.com/VOICEVOX/voicevox_core/releases/download/0.14.3/voicevox_core-0.14.3+cpu-cp38-abi3-linux_x86_64.whl
