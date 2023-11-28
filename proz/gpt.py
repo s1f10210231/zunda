@@ -1,6 +1,14 @@
 import openai
+import environ
+import os
+from pathlib import Path
 
-openai.api_key="6sVanUSz6_O1xHHq5BxslXRVW8jFYx93uSzqNXSI7KHni7q8BViv1ec8YMS4Cfc2pUr4sH0gZPTtTPtVd70M7pA"
+
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+env = environ.Env()
+env.read_env(os.path.join(BASE_DIR, ".env"))
+openai.api_key=env("OPENAI_API_KEY")
 openai.api_base = 'https://api.openai.iniad.org/api/v1'
 
 def zunda_create(text):
